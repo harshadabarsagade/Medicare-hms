@@ -1,0 +1,189 @@
+
+/* ===== MEDICARE LOGIN PAGE ===== */
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc, #dbeafe);
+  font-family: Arial, sans-serif;
+}
+
+/* Background decoration */
+
+.login-container::before,
+.login-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.login-container::before {
+  width: 350px;
+  height: 350px;
+  background: #bfdbfe;
+  opacity: 0.5;
+  top: -130px;
+  right: -100px;
+}
+
+.login-container::after {
+  width: 300px;
+  height: 300px;
+  background: #93c5fd;
+  opacity: 0.3;
+  bottom: -120px;
+  left: -80px;
+}
+
+/* Login card */
+
+.login-container form {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  min-height: 520px;
+  padding: 55px 50px;
+  box-sizing: border-box;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(30, 64, 175, 0.13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headings */
+
+.login-container h1 {
+  color: #1d4ed8;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.login-container h2 {
+  color: #172554;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.login-container p {
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+/* Labels */
+
+.login-container label {
+  display: block;
+  width: 100%;
+  margin: 16px 0 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Input fields */
+
+.login-container input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.login-container input::placeholder {
+  color: #94a3b8;
+}
+
+.login-container input:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Login button */
+
+.login-container button {
+  display: block;
+  width: 100%;
+  height: 52px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-container button:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+.login-container button:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+  .login-container form {
+    max-width: 100%;
+    min-height: auto;
+    padding: 40px 25px;
+  }
+
+  .login-container h1 {
+    font-size: 30px;
+  }
+
+  .login-container h2 {
+    font-size: 21px;
+  }
+}
+
+
+/* Medical Logo */
+
+.login-logo {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 42px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.12);
+}

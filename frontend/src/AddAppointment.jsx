@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://medicare-hms-b92s.onrender.com/api';
 
 function AddAppointment({ patients, doctors, onAppointmentAdded }) {
   const [formData, setFormData] = useState({

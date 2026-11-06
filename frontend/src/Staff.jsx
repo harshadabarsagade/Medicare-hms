@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api";
+const API = "https://medicare-hms-b92s.onrender.com/api";
 
 function Staff() {
     const [staff, setStaff] = useState([]);

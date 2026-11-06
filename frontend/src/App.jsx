@@ -11,7 +11,7 @@ import Login from './Login';
 import AddAppointment from './AddAppointment';
 import AddPatient from './AddPatient';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://medicare-hms-b92s.onrender.com/api';
 
 function App() {
   // ===== STATES =====

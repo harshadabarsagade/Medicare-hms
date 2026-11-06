@@ -15,7 +15,7 @@ function AddPatient({ onBack }) {
         };
 
        try {
-    const response = await fetch('http://localhost:5000/api/patients', {
+    const response = await fetch('https://medicare-hms-b92s.onrender.com/api/patients', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

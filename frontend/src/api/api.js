@@ -1,3 +1,2 @@
-const API_BASE_URL = "http://localhost:5000/api";
-
+const API = "https://medicare-hms-b92s.onrender.com/api";
 export default API_BASE_URL;
